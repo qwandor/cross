@@ -32,6 +32,11 @@ if_centos install_packages \
     glibc-devel \
     pkgconfig
 
+if_debian install_packages \
+    g++ \
+    libc6-dev \
+    pkg-config
+
 if_ubuntu install_packages \
     g++ \
     libc6-dev \

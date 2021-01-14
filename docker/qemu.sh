@@ -113,6 +113,16 @@ main() {
     if_centos build_static_libcap
     if_centos build_static_pixman
 
+    if_debian install_packages \
+        g++ \
+        libglib2.0-dev \
+        pkg-config \
+        zlib1g-dev \
+        libcap-dev \
+        libattr1-dev \
+        libpixman-1-dev \
+        xz-utils
+
     if_ubuntu install_packages \
         g++ \
         libglib2.0-dev \

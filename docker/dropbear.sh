@@ -17,6 +17,7 @@ main() {
         make
 
     if_centos install_packages zlib-devel
+    if_debian install_packages zlib1g-dev
     if_ubuntu install_packages zlib1g-dev
 
     local td
